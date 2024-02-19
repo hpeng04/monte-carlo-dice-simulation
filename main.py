@@ -65,7 +65,7 @@ if __name__ == "__main__":
     plt.ylabel("Balance [$]")
     plt.xlim(0, max_num_rolls)
 
-    processes = 8#mp.cpu_count()
+    processes = mp.cpu_count()
     start = time.time()
     simulations = range(1,num_simulations+1)
 
